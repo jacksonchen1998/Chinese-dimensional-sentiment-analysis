@@ -56,10 +56,10 @@ A lower MAE and a higher r indicate more accurate prediction performance.
         Valence
       </td>
       <td>
-        0.30344
+        0.3342
       </td>
       <td>
-        0.95852
+        0.95883
       </td>
     </tr>
     <tr>
@@ -67,10 +67,10 @@ A lower MAE and a higher r indicate more accurate prediction performance.
         Arousal
       </td>
       <td>
-        N/A
+        0.36525
       </td>
       <td>
-        N/A
+        0.88947
       </td>
     </tr>
   </table>
@@ -83,6 +83,10 @@ A lower MAE and a higher r indicate more accurate prediction performance.
 ![bert_v_r](./image/bert_v_r.png)
 
 > Arousal
+
+![bert_a_mae](./image/bert_a_mae.png)
+
+![bert_a_r](./image/bert_a_r.png)
 
 ### On private dataset with Bert
 
