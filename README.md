@@ -1,18 +1,13 @@
 # Chinese-dimensional-sentiment-analysis
 2024 NYCU Natural Language Processing
 
-## Dataset
-
-- Training Dataset: Chinese EmoBank (CVAT)
-- Testing Dataset: 1000+ Mental Health Texts
-
 ## Method
 
 This method aims to leverage a set of six independently trained BERT-based models, each specializing in a different category. 
 
 The final prediction is derived from the average of all model outputs, providing a robust and reliable estimate.
 
-## Evluation
+## Evaluation
 
 Mean Absolute Error (MAE):
 
@@ -34,25 +29,74 @@ $$
 
 A lower MAE and a higher r indicate more accurate prediction performance.
 
+## Experiment
+
+### Dataset
+
+- Training Dataset: Chinese EmoBank (CVAT)
+- Testing Dataset: 1000+ Mental Health Texts
+
+### On Chinese EmoBank (CVAT) with Bert
+
+<center>
+  <table>
+    <tr>
+      <th>
+        Method
+      </th>
+      <th>
+        MAE
+      </th>
+      <th>
+        r
+      </th>
+    </tr>
+    <tr>
+      <td>
+        Valence
+      </td>
+      <td>
+        0.30344
+      </td>
+      <td>
+        0.95852
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Arousal
+      </td>
+      <td>
+        N/A
+      </td>
+      <td>
+        N/A
+      </td>
+    </tr>
+  </table>
+</center>
+
+> Valence
+
+![bert_v_mae](./image/bert_v_mae.png)
+
+![bert_v_r](./image/bert_v_r.png)
+
+> Arousal
+
+### On private dataset with Bert
+
+|Method|MAE|r|
+|--|--|--|
+|Valence|||
+|Arousal|||
+
+### On Chinese EmoBank (CVAT) with MoE Bert
+
+### On private dataset with MoE Bert
+
 ## Reference
 
 - [bert-base-chinese](https://huggingface.co/google-bert/bert-base-chinese)
 - [Chinese EmoBank: Building Valence-Arousal Resources for Dimensional Sentiment Analysis](https://dl.acm.org/doi/full/10.1145/3489141)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
