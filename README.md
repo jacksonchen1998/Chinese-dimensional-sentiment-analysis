@@ -90,10 +90,43 @@ A lower MAE and a higher r indicate more accurate prediction performance.
 
 ### On private dataset with Bert
 
-|Method|MAE|r|
-|--|--|--|
-|Valence|||
-|Arousal|||
+<center>
+  <table>
+    <tr>
+      <th>
+        Method
+      </th>
+      <th>
+        MAE
+      </th>
+      <th>
+        r
+      </th>
+    </tr>
+    <tr>
+      <td>
+        Valence
+      </td>
+      <td>
+        0.75
+      </td>
+      <td>
+        0.68
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Arousal
+      </td>
+      <td>
+        1.1
+      </td>
+      <td>
+        0.47
+      </td>
+    </tr>
+  </table>
+</center>
 
 ### On Chinese EmoBank (CVAT) with MoE Bert
 

@@ -92,9 +92,9 @@ valence_predictions = predict(loaded_model, inference_loader)
 val_predictions = [pred[0] for pred in valence_predictions]  # Considering only 'Valence_Mean'
 
 # Save valence predictions to CSV
-predictions_df = pd.DataFrame(val_predictions, columns=['Valance'])
+predictions_df = pd.DataFrame(val_predictions, columns=['Valence'])
 predictions_df['ID'] = test_data['ID']
-predictions_df = predictions_df[['ID', 'Valance']]
+predictions_df = predictions_df[['ID', 'Valence']]
 predictions_df.to_csv(f"{model_save_path_v}/valence_predictions.csv", index=False)
 
 
